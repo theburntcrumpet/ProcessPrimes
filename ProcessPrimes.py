@@ -3,7 +3,7 @@ import logging,datetime
 from Primes import *
 
 """
-    A Quick and Dirty Demonstration of Concurrancy in python using a pool of processes from multithreading
+    A Quick and Dirty Demonstration of Concurrancy in python using a pool of processes from multiprocessing
 """
 
 logging.basicConfig(level=logging.DEBUG,
