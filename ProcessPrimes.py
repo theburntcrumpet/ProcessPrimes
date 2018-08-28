@@ -1,4 +1,5 @@
 from multiprocessing import Pool
+from multiprocessing import cpu_count
 import logging,datetime
 from Primes import *
 
@@ -12,9 +13,9 @@ logging.basicConfig(level=logging.DEBUG,
                     filename='ProcessPrimes.log',
                     filemode='w')
 MIN_SEARCH = 1
-MAX_SEARCH = 100000
+MAX_SEARCH = 250000
 CHUNK_SIZE = 100
-PROCESSES  = 8
+PROCESSES  = cpu_count()
 
 def GenerateChunks(nMin,nMax,nChunkSize):
     chunks = []
