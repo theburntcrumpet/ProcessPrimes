@@ -8,10 +8,7 @@ from Primes import *
 """
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(levelname)-8s %(message)s',
-                    datefmt='%m-%d %H:%M',
-                    filename='ProcessPrimes.log',
-                    filemode='w')
+                    format='%(asctime)s %(levelname)-8s %(message)s')
 MIN_SEARCH = 1
 MAX_SEARCH = 250000
 CHUNK_SIZE = 100
